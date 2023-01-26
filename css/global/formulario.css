@@ -1,0 +1,67 @@
+/*Tirando a seta do form*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formulario input[type="text"],/*Seletor que seleciona os input com type text e email e tel*/
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario input[type="tel"],
+.formulario textarea{
+    font-size: 1rem;
+    padding: 12px;
+    outline: none;
+    border: 2px solid var(--c2);
+    background-color: var(--c1);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;/*Foi usado para nao somar os padding junto que width de 100% junta*/
+}
+/*USANDO classe FOCUS*/
+/*Quando vc clica na label ou input ele fica destacado com essa borda amarela*/
+.formulario input:focus,
+.formulario textarea:focus{
+    border: 2px solid var(--p1);
+    background-color: var(--c13);
+    box-shadow: 0 0 0 2px #fea;
+}
+.formulario button{/*botao configuracao*/
+    cursor: pointer;
+    border: none;
+}
+.padpasta{
+    padding-bottom: 30px;
+}
+.formulario textarea{
+    grid-column: span 2;
+}
+label{
+    padding-bottom: 4px;
+}
+.grid-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario input[type="checkbox"]{
+    
+    width: 32px;
+    height: 32px;
+
+}
+.formulario input[type="number"]{
+    -webkit-rtl-ordering: unset;
+}
+@media(max-width:950px){
+    .button{
+        display: grid;
+        justify-items: center;
+    }
+}
+@media(max-width:750px){
+    .grid-type {
+        grid-template-columns: 1fr;
+    }
+}

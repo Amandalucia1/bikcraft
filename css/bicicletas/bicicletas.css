@@ -1,0 +1,173 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+.galeria img{
+    flex: 1;
+    min-width: 200px;
+}
+#bicicletas h1{
+    padding-bottom: 60px;
+}
+.bike-conteudo p{
+    padding-bottom: 36px;
+}
+.grid-bikes{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 10px;
+   
+}
+.span-block{
+    display: block;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    
+    background-color: var(--c12);
+}
+.flex-span{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.bike-conteudo h2{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--c13);
+
+}
+.bike-conteudo ul.grid{
+    gap: 32px;
+    text-align: left;
+    max-width: 60ch;
+}
+.bike-conteudo h3{
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.caracteristica-bike .flex{
+    justify-content: space-between;
+}
+.bike-conteudo ul{
+    background-color: var(--c12);
+   padding: 30px;
+   border-radius: 5px;
+}
+.caracteristica-bike li + li{
+   padding-top: 12px;
+}
+.caracteristica-bike li{
+    position: relative;
+ }
+ .caracteristica-bike li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--c11);
+    top: 6px;
+ }
+ .caracteristica-bike li:first-child::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0px;
+ }
+ .escolha-2{
+    padding-top: 92px;
+    padding-bottom: 240px;
+ }
+ .conteudo-pedale{/*Isso é um conteudo apos a imagem, a imagem esta numa div e isso em outra*/
+    padding-top: 160px;
+    padding-bottom: 160px;
+ }
+ .texto-pedale h2{
+    padding-bottom: 32px;
+ }
+ .texto-pedale p{
+    padding-bottom: 20px;
+ }
+.box-2 {
+    box-shadow: inset 0 120px var(--c13), inset 0 -120px var(--c12);
+
+}
+ .texto-pedale img{/*Usando essas definiçoes para o box shadow quebra de imagem*/ 
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ @media(max-width:870px){
+    .grid-bikes {
+        display: grid;
+        grid-template-columns: max-content auto;
+        gap: 8px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bike-conteudo ul.grid {
+        gap: 12px;
+        text-align: center;
+        max-width: 50ch;
+        margin: auto;
+    }
+    .bike-conteudo ul {
+        margin: auto;
+        padding: 20px;
+        max-width: 50ch;
+    }
+    .bike-conteudo h2 {
+        margin-top: 24px;
+        margin-bottom: 15px;
+    }
+    .escolha-2 {
+        padding-top: 45px;
+        padding-bottom: 80px;
+    }
+    .box-2{
+        box-shadow: none;
+    }
+    .conteudo-pedale {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .img-bikizinha{/*muda a ordem do grid*/
+        grid-row: 2;
+    }
+    #bicicletas h1 {
+        padding-bottom: 30px;
+    }
+ }
+ @media(max-width:600px){
+
+    .bike-conteudo ul.grid {
+        gap: 8px;
+        text-align: center;
+        max-width: 40ch;
+    }
+    .bike-conteudo ul {
+        max-width: 40ch;
+
+    }
+ }
+ @media(max-width:560px){
+    .grid-bikes {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
+    }
+    .flex-600{
+        display: flex;
+        gap: 10px;
+
+    }
+    .conteudo-pedale {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+ }

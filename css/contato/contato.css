@@ -1,0 +1,70 @@
+
+#contato{
+    background: linear-gradient( var(--c11) 650px, var(--c1) 0);/*O var 11 o backgroung vai ate 650px*/
+}
+.grid-contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+#contato .titulo {
+    padding-bottom: 80px;
+}
+.contato-endereco {/*Colocando o icon de local */
+    margin-bottom: 32px;
+    padding-left: 28px; /*Coloca 28px pois a imagem ttem 24px o padding da imagem e da div é 4px*/
+    background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+}
+.contato-endereco li + li{
+    padding-top: 4px;
+}
+.pasta-contato{
+    border-radius: 5px 0 0 5px;
+}
+.pasta-contato,
+.pasta-formulario{
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0 , 0.1);
+   
+}
+.pasta-formulario{
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+.pasta-contato h2{
+    margin-bottom: 60px;
+}
+.meios-contato a + a{
+    padding-top: 8px;
+}
+.meios-contato a{
+    padding-left: 28px;
+    width: max-content;
+}
+.meios-contato a:hover{
+    color: var(--c13);
+}
+.meios-contato a:first-child{/*Colocando o icon de e-mail */
+    background: url(../../img/icones/email.svg) no-repeat 0px 2px;/*0 é o eixo x horizontalal e o 2 o eixo y vertical é o background position*/
+}    
+.meios-contato a:last-child {
+    margin-top: 32px;
+}
+.pasta-contato address{
+    margin-bottom: 60px;
+}
+.logo{  
+    gap: 32px;
+}
+@media(max-width:950px){
+    .grid-contato {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .pasta-contato, .pasta-formulario {
+        padding: 30px;
+    }
+}
+

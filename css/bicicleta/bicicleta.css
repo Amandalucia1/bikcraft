@@ -1,0 +1,154 @@
+:root{
+    --c1:#f7f7f7;
+    --c2: #EDEDED;
+    --c3: #DEDEDE;
+    --c4:#CCCCCC;
+    --c5:#B2B2B2;
+    --c6:#9C9C9C;
+    --c7:#717171;
+    --c8:#595959;
+    --c9:#404040;
+    --c10:#2E2E2E;
+    --c11:#111111;
+    --c12:#000000;
+    --c13:#ffffff;
+    --p1:#FFBB00;
+    --p2:#E4A30B;
+    --p3:#A66F00;
+    --p4: #664400;
+    --p5: #332200;
+    --font-1:'Poppins', sans-serif;
+    --font-2:'Roboto', sans-serif;
+    --font-3:'Merriweather', serif;
+}
+.bicicleta-conteudo{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.img-bicicleta{
+    position: relative;
+}
+/*Tirando o span do fluxo usando uma classe que pega todos os span numa div*/
+.img-bicicleta span {
+    display: inline-block;
+    position: absolute;
+    color: var(--c13);
+    background-color: var(--c12);
+    padding: 8px 16px;
+    border-radius: 4px 0 0 4px;
+    top: 20px;
+    right: 0;
+}
+
+.bicicleta-conteudo h2{
+    padding-bottom: 20px;
+    color: var(--c11);
+}
+
+.bicicleta-conteudo h2::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    margin-bottom: 4px;
+}
+
+.bike{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bkg-bicicleta{
+    background-image: linear-gradient(to right, var(--c13) 35%,var(--c11) 35%);
+}
+.bkg-bike h2{
+    color: var(--c13);
+}
+.bkg-bike p{
+    color: var(--c5);
+}
+.bkg-bike ul{
+    color: var(--c5);
+}
+.bicicleta-conteudo p{
+    padding-bottom: 20px;
+    color: var(--c8);
+}
+.bicicleta-conteudo ul{
+    color: var(--c8);
+    display: grid;
+    gap: 8px;
+}
+.bicicleta-conteudo .pad-3{
+    padding-top: 120px;
+}
+.bicicleta-conteudo li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.bicicleta-conteudo .grid{
+    align-items: end;
+    grid-template-columns: 1fr auto;
+}
+.descricao img {
+   width: 24px;
+}
+
+.bicicletas .btn{
+    display: flex;
+    align-items: center;
+
+}
+.bicicletas .btn::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../../img/icones/seta.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    margin-left: 12px;
+    transition: 0.2s;
+
+}
+.bicicletas .btn:hover:after{
+    transform: translatex(4px);/*Move a seta no eixo X*/
+
+}
+
+@media(max-width:1040px){
+    .bkg-bicicleta{
+        background: var(--c11);
+    }
+    .bicicletas .wrap{
+        flex-wrap: wrap;
+    }
+    .bicicleta-conteudo h2::before {
+        margin: auto;
+        width: 16px;
+    }
+    .bicicleta-conteudo ul {
+    gap: 8px;
+    justify-items: start;
+    }
+    .bicicleta-conteudo .grid{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    }
+    .bicicleta-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    .bicicleta-conteudo .pad-3 {
+    padding-top: 60px;
+    }
+    }
+    @media(max-width:500px){
+    .bicicleta-conteudo .grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .bicicleta-conteudo .pad-3 {
+        padding-top: 35px;
+    }
+}

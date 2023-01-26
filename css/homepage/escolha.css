@@ -1,0 +1,64 @@
+.escolha{
+    padding-top: 40px;
+    padding-bottom: 120px; 
+
+}
+.container-2{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 2%;
+}
+.escolha a{
+    display: block;
+ }
+.escolha h2{
+   margin-bottom: 40px; 
+   color: var(--c11);
+   padding-left: 60px;
+}
+
+.escolha h3 {
+    color: var(--c11);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.escolha .ul {
+    overflow-x: auto;/*Faz a barra de scrool ao lado no eixo x*/
+    padding-bottom: 20px;
+}
+.escolha .li {
+    flex: 1;
+    min-width: 280px;/*Tamanho que alcança 280 e vira scrool*/
+    
+}
+
+.escolha h3::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background-color: var(--p1);
+    margin-right: 8px;
+    transition: .2s;
+}
+.escolha a:hover h3::before {/*Quando eu passar o mouse no "a:hover" eu quero aumentar h3::before*/
+    width: 30px;
+}
+.preco{
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    color: var(--c8);
+    padding-left: 20px;
+
+}
+@media(max-width:800px){
+    .escolha{
+        padding-bottom: 60px; 
+    
+    }
+}

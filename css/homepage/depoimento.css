@@ -1,0 +1,59 @@
+.depoimento img{
+    border-radius: 0;
+    object-fit: cover;
+}
+.depoimento-conteudo{
+   padding: 40px 40px 80px 80px;
+   align-self: end;
+}
+.depoimento p{
+    padding-bottom: 32px; 
+    color: var(--p5); 
+    text-align: left; 
+    max-width: 40ch;
+    position: relative;
+    display: flex;
+}
+.depoimento span{ 
+    color: var(--p4);  
+}
+.depoimento p::before,
+ .depoimento p::after {
+    position: absolute;
+    display: block;
+    font-size: 5rem;
+    color: var(--p2);
+}
+.depoimento p::before {
+    content: '“';
+    top: -20px;
+    left: -44px;
+}
+.depoimento p::after {
+    content: '”';
+    bottom: -26px;
+    right: 2px;
+}
+.black{
+    background-color: black;
+    padding: 60px;
+}
+
+
+@media(max-width:800px){
+    .depoimento-conteudo{
+        justify-self: center;
+        padding: 60px 20px;
+    }
+    .depoimento p::before {
+        top: -41px;
+        left: -26px;
+    }
+    .depoimento p::after {
+        content: '”';
+        bottom: -56px;
+        right: 2px;
+    }
+}
+
+

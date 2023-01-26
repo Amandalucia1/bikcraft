@@ -1,0 +1,48 @@
+:root{
+    --c1:#f7f7f7;
+    --c2: #EDEDED;
+    --c3: #DEDEDE;
+    --c4:#CCCCCC;
+    --c5:#B2B2B2;
+    --c6:#9C9C9C;
+    --c7:#717171;
+    --c8:#595959;
+    --c9:#404040;
+    --c10:#2E2E2E;
+    --c11:#111111;
+    --c12:#000000;
+    --c13:#ffffff;
+    --p1:#FFBB00;
+    --p2:#E4A30B;
+    --p3:#A66F00;
+    --p4: #664400;
+    --p5: #332200;
+    --font-1:'Poppins', sans-serif;
+    --font-2:'Roboto', sans-serif;
+    --font-3:'Merriweather', serif;
+}
+
+.termos h2{
+    padding-bottom: 20px;
+}
+.termos p + p{
+    padding-top: 20px;
+}
+.termo-conteudo{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.termos p + h2{/*Todo h2 que venha depois do P*/
+    padding-top: 40px;
+}
+@media(max-width:850px){
+    .termo-conteudo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .termo-titulo {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+}

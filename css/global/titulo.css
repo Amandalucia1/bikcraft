@@ -1,0 +1,27 @@
+.titulo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.p-titulo{
+    color: var(--c5);
+    padding-bottom: 8px;
+}
+.titulo h1{
+    color: var(--c13);
+}
+
+@media(max-width:850px){
+    .termo-titulo {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: center;
+
+    }
+    .p-titulo{
+        text-align: center;
+    }
+    .titulo {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

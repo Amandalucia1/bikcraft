@@ -1,0 +1,89 @@
+.lojas{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.lojas h2{
+    padding-bottom: 60px;
+}
+.loja-conteudo{
+    background-color: var(--c13);
+    padding: 32px 60px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.lojas ul{
+    padding-bottom: 32px;
+ }
+ .lojas li{
+     
+     padding-left: 12px;
+      border-left: 2.5px solid var(--c2);
+  }
+ 
+  .lojas li + li{
+     
+    padding-top: 8px;
+  }
+.lojas img{
+    border-radius: 4px 4px 0 0;
+}
+.lojas h3 {
+    padding-bottom: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.lojas h3::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    left: -24px;
+}
+
+.lojas p {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lojas p::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/icones/horario.svg) no-repeat;
+    left: -24px;
+}
+@media(max-width:985px){
+    .loja-conteudo {
+        padding: 25px 35px;
+    } 
+}
+@media(max-width:785px){
+    .loja-conteudo {
+        display: grid;
+        justify-items: center;
+    }  
+}
+
+@media(max-width:420px){
+    .alinhar {
+        display: grid;
+        align-items: center;
+        gap: 0;
+    }
+    .lojas ul {
+        padding-bottom: 20px;
+    }
+    .lojas p {
+        padding-top: 15px;
+    }
+    .lojas li{
+     border-left: none
+}
+}

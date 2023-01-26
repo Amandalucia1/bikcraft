@@ -1,0 +1,90 @@
+.vantagens-seguro .grid{
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));/*criou as tres colunas de 280px*/
+}
+.vantagens-seguro{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.vantagens-seguro h2{
+    padding-bottom: 60px;
+}
+.vantagens-seguro img{
+    padding-bottom: 10px;
+}
+.vantagens-seguro h3{
+    padding-bottom: 12px;
+}
+.perguntas{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.perguntas h2{
+    padding-bottom: 40px;
+}
+.perguntas li{
+   padding: 25px;
+   border-radius: 4px;
+}
+.perguntas li:nth-child(odd){
+    background-color: var(--c1);
+    
+ }
+ .perguntas .font-1-text-3{
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: var(--c11);
+ }
+ .perguntas h3{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    
+ }
+ .perguntas h3::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    
+ }
+ .perguntas h3::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background-image: url(../../img/icones/seta-abrir.svg);
+    transition: .3s;
+    
+ }
+ .perguntas h3:hover:after{
+  transform: rotate(180deg);/*Rotaciona a seta 180° ao passar o mouse*/
+    
+ }
+ .perguntas p{
+    color: var(--c9);
+ }
+ @media(max-width:870px){
+    .vantagens-seguro{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .vantagens-seguro h2{
+        padding-bottom: 30px;
+    }
+    .perguntas{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .perguntas h2{
+        padding-bottom: 20px;
+    }
+    
+ }
+ @media(max-width:800px){
+    .vantagens-seguro .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+ }

@@ -1,0 +1,41 @@
+.intro h1{
+    color: var(--c13);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.intro img{
+    height: 100%;
+}
+.introducao-conteudo{
+    padding-bottom: 240px;
+}
+.intro .font-2-text-1{
+    color: var(--c5);
+    margin-bottom: 45px;
+}
+
+@media (max-width:940px){
+
+    .intro img{
+       padding-top: 40px;
+    }
+    .intro .font-2-text-1{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:850px){
+    .intro h1 {
+        padding-bottom: 20px;
+    }
+    .intro .font-2-text-1{
+        margin-bottom: 30px;
+    }
+    .intro img{
+        padding-top: 30px;
+     }
+    
+}
+
+

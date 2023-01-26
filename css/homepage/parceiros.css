@@ -1,0 +1,44 @@
+.parceiros{
+   padding-top: 60px;
+   padding-bottom: 120px;
+}
+.parceiros h2{
+    margin-bottom: 80px;
+ }
+.parceiros .grid{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 20px;/*Cria separaçao sem o gap*/
+}
+.parceiros li{
+    display: flex;/*Coloca flex na lista li*/
+    padding: 20px;
+    border-left: 2px solid var(--c2);/*Criando a borda a esquerda*/
+}
+.parceiros img{
+    margin: auto;/*Usa margin auto para alinhar a imagem*/
+}
+.parceiros li:first-child, .parceiros li:nth-child(5){
+    border-left: none;/*Tirando a borda da onde nao precisa a esquerda*/
+}
+.parceiros li:nth-child(n+5){/*A partir do 5º item tera a borda*/
+    border-top: 2px solid var(--c2);
+}
+@media(max-width:800px){
+    .parceiros{
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .parceiros h2{
+        margin-bottom: 40px;
+     }
+     .parceiros .grid{
+        grid-template-columns: repeat(2, 1fr);
+
+    } 
+     .parceiros li:nth-child(3), .parceiros li:nth-child(7){
+        border-left: none;/*Tirando a borda da onde nao precisa a esquerda*/
+    }
+    .parceiros li:nth-child(3), .parceiros li:nth-child(4){
+        border-top: 2px solid var(--c2);
+    }
+}
