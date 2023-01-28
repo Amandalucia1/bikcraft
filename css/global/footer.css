@@ -47,6 +47,9 @@
         text-align: center;
         padding-bottom: 35px;
     }
+    .footer p {
+        text-align: center;
+    }
 }
 @media(max-width:750px){
     .img-footer{
