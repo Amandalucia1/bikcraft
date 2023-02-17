@@ -26,7 +26,8 @@ nav a:after{
     margin-top: 2px;
     transition: .4s;
 }
-nav a:hover::after{
+nav a:hover::after,
+nav a.ativo::after{
     max-width: 100%;
 }
 

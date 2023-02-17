@@ -34,15 +34,19 @@
     padding-bottom: 15px;
     color: var(--c11);
  }
- .perguntas h3{
+ .perguntas button{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     cursor: pointer;
     gap: 8px;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
     
  }
- .perguntas h3::before{
+ .perguntas button::before{
     content: "";
     display: inline-block;
     width: 12px;
@@ -50,7 +54,7 @@
     background-color: var(--p1);
     
  }
- .perguntas h3::after{
+ .perguntas button::after{
     content: "";
     display: inline-block;
     width: 14px;
@@ -59,9 +63,16 @@
     transition: .3s;
     
  }
- .perguntas h3:hover:after{
+ .perguntas button:hover:after,
+ .perguntas button[aria-expanded="true"]::after{
   transform: rotate(180deg);/*Rotaciona a seta 180° ao passar o mouse*/
     
+ }
+ .js .perguntas p {
+    display: none;
+ }
+ .js .perguntas p.ativa {
+    display: block;
  }
  .perguntas p{
     color: var(--c9);

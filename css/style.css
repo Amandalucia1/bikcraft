@@ -4,6 +4,7 @@
 @import url(./global/tipografia.css);
 @import url(./global/titulo.css);
 @import url(./global/footer.css);
+@import url(./global/plugin.css);
 
 /*homepage*/
 @import url(./homepage/intro.css);

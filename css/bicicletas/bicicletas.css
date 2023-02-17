@@ -1,12 +1,18 @@
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 20px;
+/*Galeria de imagens*/
+#bicicletas .grid{
+    align-items: start; /*Super necessario para definiçao min-width:200px funcionar*/ 
 }
-.galeria img{
+.img-bikizinha{
+    display: flex;
+    flex-wrap: wrap;/*Faz quebrarem pois tem um elemento grid*/
+    gap: 20px;
+}
+.img-bikizinha img{
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
+}
+.img-bikizinha img:first-child{
+   min-width: 100%;/*Faz o primeiro item ter tamanho total*/
 }
 #bicicletas h1{
     padding-bottom: 60px;
