@@ -15,7 +15,7 @@ function ativarlink(link) {
 
 
 //ativar itens orçamento
-
+/** ANTERIORMENTE foram feitas mudanças no HTML de SEGUROS (prata e ouro) e BICICLETAS e no CSS */
 const parametros = new URLSearchParams(location.search) /*identifica parametro value e ID do html */
 parametros.forEach(ativarproduto)/**Faz loop dos parametros (seguro e prata)*/
 
@@ -31,7 +31,8 @@ console.log(parametros)
 
 
 //Perguntas frequentes
-/** ANTERIORMENTE foram feitas mudanças no HTML de SEGUROS e BICICLETAS e no CSS */
+/** ANTERIORMENTE foram feitas mudanças no css de termos */
+
 
 const perguntas = document.querySelectorAll('.perguntas button')//seleciona button
 
@@ -39,7 +40,7 @@ for (let c = 0; c < perguntas.length; c++) {
     const elemento = perguntas[c];
     elemento.addEventListener('click', ativarpergunta)
     function ativarpergunta(event) {
-       const pergunta = event.currentTarget/**Da o elento HTML do item CLICADO */
+       const pergunta = event.currentTarget/**Da o elemento HTML do item CLICADO */
 
        const controls = pergunta.getAttribute("aria-controls")/**SELECIONANDO ATRIBUTO HTML E CRIANDO VARIAVEL*/
 
