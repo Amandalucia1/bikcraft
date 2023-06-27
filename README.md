@@ -46,13 +46,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <p align="center">
   <img alt="mobile" title="#mobile" src=".github/mobile.png" width="200px">
-
+  <img alt="mobile" title="#mobile" src=".github/mobile2.png" width="200px">
 </p>
 
 ### Desktop
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="desktop" title="#desktop" src=".github/desktop.png" width="400px">
+  <img alt="desktop" title="#desktop" src=".github/desktop2.png" width="400px">
 
 </p>
 
