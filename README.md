@@ -24,10 +24,19 @@ Foi um projeto de conclusão de curso do Origamid HTML-CSS básico são várias 
 
 ## ⚙️ Funcionalidades
 
-- [x] Pessoas num geral terão acesso :
-  - [x] A vários modelos de bicicletas elétricas
-  - [x] A um formulário para compra das bicicletas e os planos de seguros possíveis
-  - [x] Acesso a página de compra das bicicletas
+- [x] Catálogo de Bicicletas Elétricas:
+  - [x] A página apresenta três tipos diferentes de bicicletas elétricas disponíveis para venda.
+  - [x] Cada bicicleta é acompanhada por detalhes relevantes, como modelo, características, especificações técnicas e preço.
+  - [x] Os visitantes podem explorar as bicicletas, visualizar imagens e obter informações abrangentes sobre cada modelo.
+
+- [x] Seguro para Bicicletas:
+  - [x] O site oferece uma seção dedicada à venda de seguros para as bicicletas elétricas.
+  - [x] Os usuários têm a opção de adquirir o seguro online, preenchendo um formulário específico.
+
+
+- [x] Formulário de Contato:
+  - [x] Os visitantes podem preencher o formulário com seu nome, endereço de e-mail, número de telefone e uma mensagem.
+  
 
 ---
 
